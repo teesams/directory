@@ -5,7 +5,7 @@
         </a>
     </div>
     <div class="topcoat-navigation-bar__item center half">
-        <h1 class="topcoat-navigation-bar__title">Employee</h1>
+        <h1 class="topcoat-navigation-bar__title">NHS Staff Details</h1>
     </div>
 </div>
 
@@ -21,10 +21,10 @@
             <li class="topcoat-list__item"><a href="#employees/<%= managerId %>"><p>View Manager</p><p><%= managerName %></p><div class="action-icon icon-manager"/></a></li>
             <% } %>
             <% if (reports > 0) { %>
-            <li class="topcoat-list__item"><a href="#employees/<%= id %>/reports"><p>View Direct Reports</p><p><%= reports %></p><div class="action-icon icon-reports"/></a></li>
+            <li class="topcoat-list__item"><a href="#employees/<%= id %>/reports"><p>Line Managing</p><p><%= reports %></p><div class="action-icon icon-reports"/></a></li>
             <% } %>
             <li class="topcoat-list__item"><a href="tel:<%= officePhone %>"><p>Call Office</p><p><%= officePhone %></p><div class="action-icon icon-call"></div></a></li>
-            <li class="topcoat-list__item"><a href="tel:<%= cellPhone %>"><p>Call Cell</p><p><%= cellPhone %></p><div class="action-icon icon-call"></div></a></li>
+            <li class="topcoat-list__item"><a href="tel:<%= cellPhone %>"><p>Call Mobile</p><p><%= cellPhone %></p><div class="action-icon icon-call"></div></a></li>
             <li class="topcoat-list__item"><a href="sms:<%= cellPhone %>"><p>SMS</p><p><%= cellPhone %></p><div class="action-icon icon-sms"></div></a></li>
             <li class="topcoat-list__item"><a href="mailto:<%= email %>"><p>Email</p><p><%= email %></p><div class="action-icon icon-mail"></div></a></li>
         </ul>
